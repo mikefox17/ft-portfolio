@@ -9,9 +9,8 @@ const LD = () => {
                         Our Services
                     </h1>
                     <p className='mt-4 max-w-2xl text-xl text-indigo-200 lg:mx-auto'>
-                        Lorem ipsum dolor sit amet consect adipisicing elit.
-                        Possimus magnam voluptatum cupiditate veritatis in
-                        accusamus quisquam.
+                        Foxtree provides solutions to help your buisness grow
+                        online
                     </p>
                 </div>
                 <div className='mt-10'>
@@ -39,13 +38,12 @@ const LD = () => {
                             </div>
                             <div className='ml-4'>
                                 <dt className='text-3xl leading-6 font-medium text-white'>
-                                    Competitive exchange rates
+                                    WordPress Web-Hosting
                                 </dt>
-                                <dd className='mt-6 text-base text-indigo-200 text-lg'>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Maiores impedit
-                                    perferendis suscipit eaque, iste dolor
-                                    cupiditate blanditiis ratione.
+                                <dd className='mt-6 text-base text-indigo-200 text-xl'>
+                                    Foxtree can offer hosting for your custom
+                                    WordPress website, including nightly backups
+                                    and monthly plugin updates.
                                 </dd>
                             </div>
                         </div>
@@ -72,13 +70,13 @@ const LD = () => {
                             </div>
                             <div className='ml-4'>
                                 <dt className='text-3xl leading-6 font-medium text-white'>
-                                    No hidden fees
+                                    Affordable Web Development
                                 </dt>
                                 <dd className='mt-6 text-base text-indigo-200 text-lg'>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Maiores impedit
-                                    perferendis suscipit eaque, iste dolor
-                                    cupiditate blanditiis ratione.
+                                    We offer high quality and affordable web
+                                    development for startups and businesses. We
+                                    develop for mobile first to ensure designs
+                                    are consistent.
                                 </dd>
                             </div>
                         </div>
@@ -105,13 +103,13 @@ const LD = () => {
                             </div>
                             <div className='ml-4'>
                                 <dt className='text-3xl leading-6 font-medium text-white'>
-                                    Transfers are instant
+                                    WordPress Functionality{' '}
                                 </dt>
                                 <dd className='mt-6 text-base text-indigo-200 text-lg'>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Maiores impedit
-                                    perferendis suscipit eaque, iste dolor
-                                    cupiditate blanditiis ratione.
+                                    Foxtree can add core functionality to your
+                                    website. Ranging from newsletters, contact
+                                    forms, and security. We also provide free
+                                    tutorials for each client.
                                 </dd>
                             </div>
                         </div>
@@ -138,13 +136,13 @@ const LD = () => {
                             </div>
                             <div className='ml-4'>
                                 <dt className='text-3xl leading-6 font-medium text-white'>
-                                    Mobile notifications
+                                    Consultation and Strategy
                                 </dt>
                                 <dd className='mt-6 text-base text-indigo-200 text-lg'>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Maiores impedit
-                                    perferendis suscipit eaque, iste dolor
-                                    cupiditate blanditiis ratione.
+                                    We offer website strategies to help you
+                                    understand your customers and the digital
+                                    world. We will collaborate with you through
+                                    every step of the process.
                                 </dd>
                             </div>
                         </div>

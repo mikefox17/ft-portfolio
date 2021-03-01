@@ -5,12 +5,10 @@ const Hero = () => {
         <div className='md:flex items-center py-20 px-10 bg-indigo-500 justify-between'>
             {/* left */}
             <div className='md:w-1/2 mb-10 md:mb-0'>
-                <h1 className='text-6xl mb-4 text-white text-center'>
-                    Lorem ipsum dolor sit amet.
-                </h1>
+                <h1 className='text-5xl mb-4 text-white text-center'>
+                We build intuitive WordPress experiences</h1>
                 <p className='text-2xl text-indigo-200 mb-4 text-center'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatibus, libero.
+                    WordPress Development and Consultation
                 </p>
                 <div className='flex justify-center'>
                     <a
