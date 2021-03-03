@@ -2,13 +2,13 @@ import React from 'react';
 
 const LD = () => {
     return (
-        <div className='py-12 bg-indigo-600'>
+        <div className=' md:py-40  bg-indigo-600 h-100 '>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-                <div className='lg:text-center'>
-                    <h1 className='mt-2 text-6xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl'>
+                <div className='text-center '>
+                    <h1 className='py-10 leading-8 font-extrabold tracking-lead text-white text-center text-5xl'>
                         Our Services
                     </h1>
-                    <p className='mt-4 max-w-2xl text-xl text-indigo-200 lg:mx-auto'>
+                    <p className=' mt-4  text-xl text-indigo-200 text-center'>
                         Foxtree provides solutions to help your buisness grow
                         online
                     </p>

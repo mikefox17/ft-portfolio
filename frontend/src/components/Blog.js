@@ -10,6 +10,8 @@ const Blog = () => {
                 `*[_type == "post"]|order(publishedAt desc) [0..2]{
             title,
             slug,
+            excerpt,
+            tags,
             'name': author->name,
             mainImage{
               asset->{
@@ -25,38 +27,47 @@ const Blog = () => {
     }, []);
 
     return (
-        <div className='px-20 py-10 bg-indigo-600'>
-            <h1 className='mb-10 text-center text-white text-4xl font-extrabold'>
-                Recent Blog Posts
-            </h1>
-
-            <div className='lg:grid grid-cols-3 gap-20 '>
+        <div class='w-full bg-white p-12 bg-indigo-500'>
+            <div class='header mb-12 text-center'>
+                <div class='title text-center'>
+                    <h3 className='my-4  font-semibold text-white text-4xl'>
+                        Our Recent Stories
+                    </h3>
+                    <p class='text-base text-xl font-light text-indigo-200 text-center'>
+                        Articles about all things wed dev and tech
+                    </p>
+                </div>
+            </div>
+            <div class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12'>
                 {postData &&
                     postData.map((post, index) => (
-                        <div className='rounded-xl overflow-hidden shadow-xl bg-indigo-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ... sm:mb-10'>
-                            <img
-                                src={post.mainImage.asset.url}
-                                alt=''
-                                className='w-full rounded-t-lg h-80 object-cover'
-                            />
-                            <div className='px-3 font-bold text-xl mb-2'>
-                                <h3 className='mt-3 text-2xl text-white'>
-                                    {post.title}
-                                </h3>
-                            </div>
-                            <ul className='px-3 py-5'>
-                                <li className='text-indigo-200'>
-                                    <strong className='text-indigo-900'>
-                                        Author:{' '}
-                                    </strong>
-                                    {post.name}
-                                </li>
-                                <li className='text-indigo-200'>
-                                    <strong className='text-indigo-900'>
-                                        Tags:{' '}
-                                    </strong>
-                                </li>
-                            </ul>
+                        <div class='overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto'>
+                            <a href='#' class='w-full block h-full'>
+                                <img
+                                    alt='blog photo'
+                                    src={post.mainImage.asset.url}
+                                    class='max-h-40 w-full object-cover'
+                                />
+                                <div class='bg-white dark:bg-gray-800 w-full p-4'>
+                                    <p class='text-indigo-500 text-md font-medium'>
+                                        Article
+                                    </p>
+                                    <p class='text-gray-800 dark:text-white text-xl font-medium mb-2'>
+                                        {post.title}
+                                    </p>
+
+                                    <p class='text-gray-400 dark:text-gray-300 font-light text-md'>
+                                        {post.excerpt}
+                                    </p>
+                                    <div class='flex flex-wrap justify-starts items-center mt-4'>
+                                        {post.tags.map(tag => (
+                                            <div class='text-xs mr-2 py-1.5 px-4 m-1 text-gray-600 bg-blue-100 rounded-2xl'>
+                                                {tag}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     ))}
             </div>
