@@ -16,6 +16,22 @@ export default {
             type: 'image',
         },
         {
+            name: 'tags',
+            type: 'array',
+            of: [
+                {
+                    type: 'string',
+                },
+            ],
+            options: {
+                layout: 'tags',
+            },
+        },
+        {
+            name: 'link',
+            type: 'url',
+        },
+        {
             name: 'description',
             type: 'blockContent',
         },

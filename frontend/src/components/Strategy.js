@@ -3,7 +3,7 @@ import svg from '../undraw_Goals_re_lu76.svg';
 
 const Strategy = () => {
     return (
-        <section className='bg-indigo-600 py-20'>
+        <section className='bg-indigo-500 py-20'>
             <div className='container  mx-auto p-4 sm:p-6 lg:p-8 '>
                 <div className='flex flex-wrap -mx-8'>
                     <div className='w-full lg:w-1/2 px-8'>
@@ -25,7 +25,7 @@ const Strategy = () => {
                         <ul className='space-y-12'>
                             <li className='flex -mx-4'>
                                 <div className='px-4'>
-                                    <span className='flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-indigo-500 text-white'>
+                                    <span className='flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-indigo-600 text-white'>
                                         1
                                     </span>
                                 </div>
@@ -42,7 +42,7 @@ const Strategy = () => {
                             </li>
                             <li className='flex -mx-4'>
                                 <div className='px-4'>
-                                    <span className='flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-indigo-500 text-white'>
+                                    <span className='flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-indigo-600 text-white'>
                                         2
                                     </span>
                                 </div>
@@ -60,7 +60,7 @@ const Strategy = () => {
                             </li>
                             <li className='flex -mx-4'>
                                 <div className='px-4'>
-                                    <span className='flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-indigo-500 text-white'>
+                                    <span className='flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-indigo-600 text-white'>
                                         3
                                     </span>
                                 </div>

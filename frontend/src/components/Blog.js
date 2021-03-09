@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../client';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
     const [postData, setPost] = useState(null);
@@ -27,7 +28,7 @@ const Blog = () => {
     }, []);
 
     return (
-        <div class='w-full bg-white p-12 bg-indigo-500'>
+        <div class='w-full bg-white p-12 pb-40 bg-indigo-500'>
             <div class='header mb-12 text-center'>
                 <div class='title text-center'>
                     <h3 className='my-4  font-semibold text-white text-4xl'>
@@ -42,7 +43,10 @@ const Blog = () => {
                 {postData &&
                     postData.map((post, index) => (
                         <div class='overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto'>
-                            <a href='#' class='w-full block h-full'>
+                            <Link
+                                to={'/post/' + post.slug.current}
+                                key={post.slug.current}
+                            >
                                 <img
                                     alt='blog photo'
                                     src={post.mainImage.asset.url}
@@ -67,7 +71,7 @@ const Blog = () => {
                                         ))}
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     ))}
             </div>
